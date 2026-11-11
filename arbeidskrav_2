@@ -1,1 +1,16 @@
+#Oppgave 1
+
+alder = int(input('Hvilket år er du født? ') )
+
+nåværende_år = 2026
+
+utregnet_alder = nåværende_år - alder
+
+print ("Du er", utregnet_alder, "år gammel" )
+
+#Oppgave 2
+
+antall_elever = int(input('Skriv inn antall elever:' ))
+
+
 
