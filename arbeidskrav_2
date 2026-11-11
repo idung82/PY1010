@@ -14,3 +14,20 @@ antall_elever = int(input('Skriv inn antall elever:' ))
 
 
 
+#Oppgave 2
+
+
+import numpy as np
+
+antall_elever = int(input('Skriv inn antall elever:' ))
+
+posjon = 0.25
+
+
+antall_pizza = (antall_elever * posjon)
+
+pizza_rundet_opp = np.ceil(antall_pizza)
+
+
+
+print ("Du trenger", (int(pizza_rundet_opp)), "pizza")
