@@ -29,5 +29,17 @@ antall_pizza = (antall_elever * posjon)
 pizza_rundet_opp = np.ceil(antall_pizza)
 
 
+#Oppgave 3
+import numpy as np
+v_grad = float(input('Skriv inn gradtallet:' ))
+
+v_rad = v_grad*np.pi/180
+
+print ("Radianen av", v_grad, "er", round(v_rad, 5))
+
+
+
+
+
 
 print ("Du trenger", (int(pizza_rundet_opp)), "pizza")
