@@ -10,12 +10,6 @@ print ("Du er", utregnet_alder, "år gammel" )
 
 
 #Oppgave 2
-antall_elever = int(input('Skriv inn antall elever:' ))
-
-#slutt oppgave 1
-
-
-#Oppgave 2
 import numpy as np
 
 antall_elever = int(input('Skriv inn antall elever:' ))
