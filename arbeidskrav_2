@@ -1,5 +1,4 @@
 #Oppgave 1
-
 alder = int(input('Hvilket år er du født? ') )
 
 nåværende_år = 2026
@@ -7,30 +6,27 @@ nåværende_år = 2026
 utregnet_alder = nåværende_år - alder
 
 print ("Du er", utregnet_alder, "år gammel" )
+#slutt oppgave 1
+
 
 #Oppgave 2
-
 antall_elever = int(input('Skriv inn antall elever:' ))
 
 #slutt oppgave 1
 
 
 #Oppgave 2
-
-
 import numpy as np
 
 antall_elever = int(input('Skriv inn antall elever:' ))
 
 posjon = 0.25
 
-
 antall_pizza = (antall_elever * posjon)
 
 pizza_rundet_opp = np.ceil(antall_pizza)
 
 print ("Du trenger", (int(pizza_rundet_opp)), "pizza")
-
 #slutt oppgave 2
 
 
@@ -41,7 +37,6 @@ v_grad = float(input('Skriv inn gradtallet:' ))
 v_rad = v_grad*np.pi/180
 
 print ("Radianen av", v_grad, "er", round(v_rad, 5))
-
 #slutt oppgave 3
 
 
