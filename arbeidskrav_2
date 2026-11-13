@@ -71,10 +71,10 @@ import matplotlib.pyplot as plt #usikker om jeg trenger denne
 def oppgv5(a, b):
     r = a / 2 # definerer radius
     A = (a * b) / 2 + (np.pi * r**2) / 2 #regner ut areal av trekant + halvsirkel 
-    o = b + np.pi * r + np.sqrt(a**2 + b**2) 
+    o = b + np.pi * r + np.sqrt(a**2 + b**2) # b er den rette siden, np.pi*r er halvsirkelen og np.sqrt(a**2 + b**2) er den skrå siden. Til sammen blir dette omkretsen. 
     return A, o
 
-side_a = 4
+side_a = 4 #her kan man bytte størrelse på figurens sider
 side_b = 6
 
 areal, omkrets = oppgv5(side_a, side_b)
@@ -88,8 +88,8 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 x = np.linspace(-10, 10, 200) #her fikk vi et fint hint i oppgaven
-y = -x**2 - 5
-plt.plot(x, y)
+y = -x**2 - 5 #−𝑥2 − 5 i pythonsk
+plt.plot(x, y) #plotter inn grafen
 #slutt oppgave 6
 
 
