@@ -4,15 +4,15 @@
 alder = int(input('Hvilket år er du født? ') )
 nåværende_år = 2024
 utregnet_alder = nåværende_år - alder
-print ("Du er", utregnet_alder, "år gammel" )
+print ("Du blir", utregnet_alder, "år gammel" )
 #slutt oppgave 1
 
 
 #Oppgave 2
 import numpy as np
 antall_elever = int(input('Skriv inn antall elever:' ))
-posjon = 0.25 #hver elev spiser en kvart pizza
-antall_pizza = (antall_elever * posjon) #her regner jeg ut hvor mange pizza som trengs
+porsjon = 0.25 #hver elev spiser en kvart pizza
+antall_pizza = (antall_elever * porsjon) #her regner jeg ut hvor mange pizza som trengs
 pizza_rundet_opp = np.ceil(antall_pizza) #Her har jeg rundet opp, jeg spurte KI om funksjonsnavnet for å runde opp
 print ("Du trenger", (int(pizza_rundet_opp)), "pizza")
 #slutt oppgave 2
@@ -20,12 +20,13 @@ print ("Du trenger", (int(pizza_rundet_opp)), "pizza")
 
 #Oppgave 3
 import numpy as np
-v_grad = float(input('Skriv inn gradtallet:' ))
-v_rad = v_grad*np.pi/180
-print ("Radianen av", v_grad, "er", round(v_rad, 5))
+v_grad = float(input('Skriv inn gradtallet:' )) #skriver inn vinkelen i grader med desimaltall
+v_rad = v_grad*np.pi/180  #gjør om fra grader til radianer, vi fikk utgitt formel i oppgaveteksten
+print ("Radianen av", v_grad, "er", round(v_rad, 5))  #her runder jeg av til 5 desimaler
 #slutt oppgave 3
 
-#Oppgave 4
+
+ #Oppgave 4
 #a+b
 #Her følger en dictionary med Land og tilhørende hovedstad og innbyggertall
 data = {                           
@@ -36,7 +37,7 @@ data = {
 }
 
 Land = input("Hvilket land vil du finne hovedstaden til?") #Brukeren skriver inn hvilket land han vil finne hovedstaden til
-print( "Hovedstaden er", data[Land][0],"og det er", data[Land][1], "innbyggere i", data[Land][0]) #Forteller hovedstad og også inbyggertall
+print(data[Land][0], "er hovedstaden i", Land, "og det er", data[Land][1], "mill. innbyggere i", data[Land][0])
 
 
 #oppgave c
@@ -65,7 +66,7 @@ print(data)
 #Her skulle jeg regne ut omkretsen av en trekant og en halvsirkel. 
 
 import numpy as np
-import matplotlib.pyplot as plt
+import matplotlib.pyplot as plt #usikker om jeg trenger denne
 
 def oppgv5(a, b):
     r = a / 2 # definerer radius
