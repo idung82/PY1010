@@ -1,25 +1,17 @@
 #Oppgave 1
 alder = int(input('Hvilket år er du født? ') )
-
 nåværende_år = 2026
-
 utregnet_alder = nåværende_år - alder
-
 print ("Du er", utregnet_alder, "år gammel" )
 #slutt oppgave 1
 
 
 #Oppgave 2
 import numpy as np
-
 antall_elever = int(input('Skriv inn antall elever:' ))
-
 posjon = 0.25
-
 antall_pizza = (antall_elever * posjon)
-
 pizza_rundet_opp = np.ceil(antall_pizza)
-
 print ("Du trenger", (int(pizza_rundet_opp)), "pizza")
 #slutt oppgave 2
 
@@ -27,47 +19,54 @@ print ("Du trenger", (int(pizza_rundet_opp)), "pizza")
 #Oppgave 3
 import numpy as np
 v_grad = float(input('Skriv inn gradtallet:' ))
-
 v_rad = v_grad*np.pi/180
-
 print ("Radianen av", v_grad, "er", round(v_rad, 5))
 #slutt oppgave 3
 
 #Oppgave 4
 #a+b
-
 data = {
     "Norge": ["Oslo", 0.634],
     "England": ["London", 8.982],
     "Frankrike": ["Paris", 2.161],
     "Italia": ["Roma", 2.873]
 }
-          
-Land = input("Hvilket land vil du finne hovedstaden til?")
 
+Land = input("Hvilket land vil du finne hovedstaden til?")
 print( "Hovedstaden er", data[Land][0],"og det er", data[Land][1], "innbyggere i", data[Land][0])
 
 
 #oppgave c
-
 data = {
     "Norge": ["Oslo", 0.634],
     "England": ["London", 8.982],
     "Frankrike": ["Paris", 2.161],
     "Italia": ["Roma", 2.873]
-
-}
-
+    }
 
 Land = input("Hvilket land vil du registrere?")
 Hovedstad = input("Hva heter hovedstaden?")
 Innbyggere = input("hvor mange innbyggere er det?")
-
 data[Land] = [Hovedstad, float(Innbyggere)]
-
 print(data)
 #slutt oppgave 4
 
+#oppgave 5
+import numpy as np
+import matplotlib.pyplot as plt
+
+def oppgv5(a, b):
+    r = a / 2
+    A = (a * b) / 2 + (np.pi * r**2) / 2
+    o = b + np.pi * r + np.sqrt(a**2 + b**2)
+    return A, o
+
+side_a = 4
+side_b = 6
+
+areal, omkrets = oppgv5(side_a, side_b)
+print("Arealet er", areal, "og omkretsen er", omkrets)
+#slutt oppgave 5
 
 
 
