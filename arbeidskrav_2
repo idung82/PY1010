@@ -33,6 +33,43 @@ v_rad = v_grad*np.pi/180
 print ("Radianen av", v_grad, "er", round(v_rad, 5))
 #slutt oppgave 3
 
+#Oppgave 4
+#a+b
+
+data = {
+    "Norge": ["Oslo", 0.634],
+    "England": ["London", 8.982],
+    "Frankrike": ["Paris", 2.161],
+    "Italia": ["Roma", 2.873]
+}
+          
+Land = input("Hvilket land vil du finne hovedstaden til?")
+
+print( "Hovedstaden er", data[Land][0],"og det er", data[Land][1], "innbyggere i", data[Land][0])
+
+
+#oppgave c
+
+data = {
+    "Norge": ["Oslo", 0.634],
+    "England": ["London", 8.982],
+    "Frankrike": ["Paris", 2.161],
+    "Italia": ["Roma", 2.873]
+
+}
+
+
+Land = input("Hvilket land vil du registrere?")
+Hovedstad = input("Hva heter hovedstaden?")
+Innbyggere = input("hvor mange innbyggere er det?")
+
+data[Land] = [Hovedstad, float(Innbyggere)]
+
+print(data)
+#slutt oppgave 4
+
+
+
 
 
 
