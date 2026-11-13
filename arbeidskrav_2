@@ -1,6 +1,8 @@
 #Oppgave 1
+#Oppgaveteksten spesifiserte at vi skulle regne ut i fra år 2024
+
 alder = int(input('Hvilket år er du født? ') )
-nåværende_år = 2026
+nåværende_år = 2024
 utregnet_alder = nåværende_år - alder
 print ("Du er", utregnet_alder, "år gammel" )
 #slutt oppgave 1
@@ -9,9 +11,9 @@ print ("Du er", utregnet_alder, "år gammel" )
 #Oppgave 2
 import numpy as np
 antall_elever = int(input('Skriv inn antall elever:' ))
-posjon = 0.25
-antall_pizza = (antall_elever * posjon)
-pizza_rundet_opp = np.ceil(antall_pizza)
+posjon = 0.25 #hver elev spiser en kvart pizza
+antall_pizza = (antall_elever * posjon) #her regner jeg ut hvor mange pizza som trengs
+pizza_rundet_opp = np.ceil(antall_pizza) #Her har jeg rundet opp, jeg spurte KI om funksjonsnavnet for å runde opp
 print ("Du trenger", (int(pizza_rundet_opp)), "pizza")
 #slutt oppgave 2
 
@@ -25,18 +27,25 @@ print ("Radianen av", v_grad, "er", round(v_rad, 5))
 
 #Oppgave 4
 #a+b
-data = {
+#Her følger en dictionary med Land og tilhørende hovedstad og innbyggertall
+data = {                           
     "Norge": ["Oslo", 0.634],
     "England": ["London", 8.982],
     "Frankrike": ["Paris", 2.161],
     "Italia": ["Roma", 2.873]
 }
 
-Land = input("Hvilket land vil du finne hovedstaden til?")
-print( "Hovedstaden er", data[Land][0],"og det er", data[Land][1], "innbyggere i", data[Land][0])
+Land = input("Hvilket land vil du finne hovedstaden til?") #Brukeren skriver inn hvilket land han vil finne hovedstaden til
+print( "Hovedstaden er", data[Land][0],"og det er", data[Land][1], "innbyggere i", data[Land][0]) #Forteller hovedstad og også inbyggertall
 
 
 #oppgave c
+
+"""
+I denne oppgaven kan man fylle ut dictionaryen fra oppgave a/b, jeg inkluderte data fra forrige dictionary.
+Her har jeg ikke med funksjonen for å slå opp i dictinary, men dette er et program for å fylle inn land med tilhørende hovedstad og innbyggertall
+"""
+
 data = {
     "Norge": ["Oslo", 0.634],
     "England": ["London", 8.982],
@@ -52,13 +61,16 @@ print(data)
 #slutt oppgave 4
 
 #oppgave 5
+
+#Her skulle jeg regne ut omkretsen av en trekant og en halvsirkel. 
+
 import numpy as np
 import matplotlib.pyplot as plt
 
 def oppgv5(a, b):
-    r = a / 2
-    A = (a * b) / 2 + (np.pi * r**2) / 2
-    o = b + np.pi * r + np.sqrt(a**2 + b**2)
+    r = a / 2 # definerer radius
+    A = (a * b) / 2 + (np.pi * r**2) / 2 #regner ut areal av trekant + halvsirkel 
+    o = b + np.pi * r + np.sqrt(a**2 + b**2) 
     return A, o
 
 side_a = 4
@@ -70,10 +82,11 @@ print("Arealet er", areal, "og omkretsen er", omkrets)
 
 
 #oppgave 6
+
 import numpy as np
 import matplotlib.pyplot as plt
 
-x = np.linspace(-10, 10, 200)
+x = np.linspace(-10, 10, 200) #her fikk vi et fint hint i oppgaven
 y = -x**2 - 5
 plt.plot(x, y)
 #slutt oppgave 6
