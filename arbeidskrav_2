@@ -26,7 +26,7 @@ print ("Radianen av", v_grad, "er", round(v_rad, 5))  #her runder jeg av til 5 d
 #slutt oppgave 3
 
 
- #Oppgave 4
+#Oppgave 4
 #a+b
 #Her følger en dictionary med Land og tilhørende hovedstad og innbyggertall
 data = {                           
@@ -63,10 +63,9 @@ print(data)
 
 #oppgave 5
 
-#Her skulle jeg regne ut omkretsen av en trekant og en halvsirkel. 
+#Her skulle jeg regne ut omkretsen og arealet av en trekant med en halvsirkel over. 
 
 import numpy as np
-import matplotlib.pyplot as plt #usikker om jeg trenger denne
 
 def oppgv5(a, b):
     r = a / 2 # definerer radius
